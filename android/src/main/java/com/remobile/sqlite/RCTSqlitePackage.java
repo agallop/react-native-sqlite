@@ -39,7 +39,7 @@ public class RCTSqlitePackage extends ReactContextBaseJavaModule implements Reac
     }
     
     public String getName(){
-        return 'sqlite'
+        return "sqlite";
     }
 
     @Override
