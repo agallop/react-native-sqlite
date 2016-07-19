@@ -18,6 +18,8 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 public class RCTSqlitePackage implements ReactPackage {
 
     private SQLitePlugin mModuleInstance;
+    
+    public RCTSqlitePackage(){}
 
 
     @Override
