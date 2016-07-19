@@ -55,9 +55,8 @@ public class SQLitePlugin extends CordovaPlugin {
 
     public static String LOG_TAG = "SQLitePlugin";
 
-    public SQLitePlugin(ReactApplicationContext reactContext, Activity activity) {
+    public SQLitePlugin(ReactApplicationContext reactContext) {
         super(reactContext);
-        this.cordova.setActivity(activity);
     }
 
     @Override
@@ -277,7 +276,7 @@ public class SQLitePlugin extends CordovaPlugin {
             // ASSUMPTION: no db (connection/handle) is already stored in the map
             // [should be true according to the code in DBRunner.run()]
 
-            File dbfile = this.cordova.getActivity().getDatabasePath(dbname);
+            File dbfile = getCurrentActivity().getDatabasePath(dbname);
 
             if (!dbfile.exists()) {
                 dbfile.getParentFile().mkdirs();
