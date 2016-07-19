@@ -12,6 +12,7 @@ import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
+import com.facebook.react.bridge.ReactContextBaseJavaModule
 
 
 public class RCTSqlitePackage implements ReactPackage {
@@ -19,15 +20,14 @@ public class RCTSqlitePackage implements ReactPackage {
     private Activity activity;
     private SQLitePlugin mModuleInstance;
 
-    public RCTSqlitePackage(Activity activity) {
-        super();
-        this.activity = activity;
+    public RCTSqlitePackage(ReactApplicationContext reactContext) {
+        super(reactContext);
     }
 
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        mModuleInstance = new SQLitePlugin(reactContext, activity);
+        mModuleInstance = new SQLitePlugin(reactContext, getCurrentActivity());
         return Arrays.<NativeModule>asList(
                 mModuleInstance
         );
