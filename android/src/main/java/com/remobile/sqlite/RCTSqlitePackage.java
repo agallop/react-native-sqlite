@@ -20,9 +20,9 @@ public class RCTSqlitePackage extends ReactContextBaseJavaModule implements Reac
     private Activity activity;
     private SQLitePlugin mModuleInstance;
 
-    public RCTSqlitePackage(ReactApplicationContext reactContext) {
+  /*  public RCTSqlitePackage(ReactApplicationContext reactContext) {
         super(reactContext);
-    }
+    } */
 
 
     @Override
