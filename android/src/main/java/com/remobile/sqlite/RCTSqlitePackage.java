@@ -17,12 +17,11 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 
 public class RCTSqlitePackage extends ReactContextBaseJavaModule implements ReactPackage {
 
-    private Activity activity;
     private SQLitePlugin mModuleInstance;
 
-  /*  public RCTSqlitePackage(ReactApplicationContext reactContext) {
-        super(reactContext);
-    } */
+    public RC TSqlitePackage() {
+        
+    } 
 
 
     @Override
