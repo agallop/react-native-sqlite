@@ -15,7 +15,7 @@ import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 
 
-public class RCTSqlitePackage implements ReactPackage {
+public class RCTSqlitePackage extends ReactContextBaseJavaModule implements ReactPackage {
 
     private Activity activity;
     private SQLitePlugin mModuleInstance;
