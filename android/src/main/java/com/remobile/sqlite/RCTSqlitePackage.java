@@ -37,6 +37,10 @@ public class RCTSqlitePackage extends ReactContextBaseJavaModule implements Reac
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
+    
+    public String getName(){
+        return 'sqlite'
+    }
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
