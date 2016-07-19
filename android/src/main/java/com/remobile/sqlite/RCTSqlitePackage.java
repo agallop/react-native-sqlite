@@ -19,7 +19,7 @@ public class RCTSqlitePackage extends ReactContextBaseJavaModule implements Reac
 
     private SQLitePlugin mModuleInstance;
 
-    public RC TSqlitePackage() {
+    public RCTSqlitePackage() {
         
     } 
 
